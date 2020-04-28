@@ -1,0 +1,35 @@
+{
+  "name": "DropboxCuckoo",
+  "version": "0.0.1",
+  "license": "AGPL-V3",
+  "author": "Rick Lahaye",
+  "description": "Upload file to Dropbox so Cuckoo can do its work",
+  "dataTypeList": ["file"],
+  "command": "cortex-dropbox-cuckoo/dropboxcuckoo.py",
+  "baseConfig": "DropboxCuckoo",
+  "url": "https://github.com/ricklahaye/cortex-dropbox-cuckoo",
+  "configurationItems": [
+    {
+      "name": "dropbox_token",
+      "description": "OAuth Dropbox Token",
+      "type": "string",
+      "multi": false,
+      "required": true
+    },
+    {
+      "name": "zip_password",
+      "description": "ZIP Password",
+      "type": "string",
+      "multi": false,
+      "required": true
+    },
+    {
+      "name": "polling_interval",
+      "description": "Define time interval between two requests attempts for the report",
+      "type": "number",
+      "multi": false,
+      "required": false,
+      "defaultValue": 60
+    }
+  ]
+}
