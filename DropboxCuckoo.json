@@ -5,9 +5,9 @@
   "author": "Rick Lahaye",
   "description": "Upload file to Dropbox so Cuckoo can do its work",
   "dataTypeList": ["file"],
-  "command": "cortex-dropbox-cuckoo/dropboxcuckoo.py",
+  "command": "cortex-dropboxcuckoo/dropboxcuckoo.py",
   "baseConfig": "DropboxCuckoo",
-  "url": "https://github.com/ricklahaye/cortex-dropbox-cuckoo",
+  "url": "https://github.com/ricklahaye/cortex-dropboxcuckoo",
   "configurationItems": [
     {
       "name": "dropbox_token",
