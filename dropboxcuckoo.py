@@ -31,7 +31,8 @@ class DropboxCuckooAnalyzer(Analyzer):
                                  compression=pyzipper.ZIP_LZMA,
                                  encryption=pyzipper.WZ_AES) as zf:
             zf.pwd = self.zip_password
-            zf.writestr(filepath, "What ever you do, don't tell anyone!")
+            # zf.writestr(filepath, "What ever you do, don't tell anyone!")
+            zf.write(filepath)
         return filename_encrypted
 
     def upload(self, filehash, filename, filepath):
